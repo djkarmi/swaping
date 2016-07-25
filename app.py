@@ -12,7 +12,7 @@ import sys
 import logging
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL','postgres://caiishutnbcvsk:kJ5_Vmi8twaFzaJO_AZHtOaiKc@ec2-54-243-210-223.compute-1.amazonaws.com:5432/dbajksvjkouhlq']
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
